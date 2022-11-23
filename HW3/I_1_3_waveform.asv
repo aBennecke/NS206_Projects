@@ -1,0 +1,17 @@
+function [t,I] = I_1_3_waveform()
+    time = linspace(0,100,1000);
+    t1 = 10;
+    t2 = 20;
+    t3 = 25;
+    t4 = 35;
+
+    I_amp = 10;
+    I = zeros(1);
+
+    for i=1:length(time)
+        if time(i) > t1 && time(i) < t2
+            I(i) = I_amp;
+        elseif time()
+        end
+    end
+end

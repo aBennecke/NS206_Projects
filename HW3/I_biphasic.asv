@@ -1,0 +1,6 @@
+function out = I_biphasic(V,Rs,Rct,tPulse,Rpar,Cdl)
+    out = (V/(Rs+Rct)).*(1+(Rct/Rs)*exp(-tPulse/(Rpar*Cdl)));
+   
+    out(200:400) = -exp();
+
+end
